@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/frameLayout3"
+        style="@style/FrameBorder"
+        android:layout_width="355dp"
+        android:layout_height="149dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:visibility="visible"
+        android:background="@drawable/rectangleborder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+        <TextView
+            android:id="@+id/TS"
+            style="@style/PersonName"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Taylor Swift" />
+
+        <TextView
+            android:id="@+id/Taysubtext"
+            style="@style/PersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingTop="19dp"
+            android:text="Singer"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/Taytext"
+            style="@style/PersonDesc"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="American singer-songwriter. One of the world's leading contemporary recording artists, she is known for narrative songs about her personal life, which have received widespread media coverage." />
+
+        <ImageView
+            android:id="@+id/Tay"
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:layout_marginLeft="275dp"
+            android:layout_marginTop="40dp"
+            app:srcCompat="@drawable/tay" />
+    </FrameLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/frameLayout2"
+        style="@style/FrameBorder"
+        android:layout_width="355dp"
+        android:layout_height="155dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rectangleborder"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/MBB"
+            style="@style/PersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="Millie Bobby Brown"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/MBBsubtext"
+            style="@style/PersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingTop="20dp"
+            android:text="Actress"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/Millietext"
+            style="@style/PersonDesc"
+            android:layout_width="272dp"
+            android:layout_height="114dp"
+            android:paddingTop="18dp"
+            android:text="British actress and model. She rose to prominence for her role as Eleven in the Netflix science fiction drama series Stranger Things." />
+
+        <ImageView
+            android:id="@+id/Mil"
+            style="@style/PicFormat"
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/mil" />
+    </FrameLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/frameLayout"
+        style="@style/FrameBorder"
+        android:layout_width="355dp"
+        android:layout_height="162dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="3"
+        android:background="@drawable/rectangleborder"
+        android:paddingRight="2dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout2">
+
+        <TextView
+            android:id="@+id/RSW"
+            style="@style/PersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Rey" />
+
+        <TextView
+            android:id="@+id/Reysubtext"
+            style="@style/PersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingTop="19dp"
+            android:text="Jedi"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/Reytext"
+            style="@style/PersonDesc"
+            android:layout_width="268dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:text="Jakku scavenger, a survivor toughened by life on a harsh desert planet. When the fugitive droid BB-8 appeals to her for help, Rey finds herself drawn into a galaxy-spanning conflict. Despite dismissing herself as 'no one,' she learns that her life is being shaped by the mysterious power of the Force." />
+
+        <ImageView
+            android:id="@+id/Rey"
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/rey" />
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>
